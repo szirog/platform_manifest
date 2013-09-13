@@ -6,7 +6,7 @@
 
   <remote  name="github"
            fetch="git://github.com/"
-           review="https://review.slimroms.net:8443/"/>
+           review="review.slimroms.net"/>
 
   <default revision="refs/tags/android-4.3_r2.2"
            remote="aosp"
@@ -377,13 +377,13 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="jb4.3" />
+  <project path="moto2slim" name="szirog/moto2slim" remote="github" revision="master" />
 
   <!-- New Additions for slim -->
   <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="jb4.3" />
 
-  <!-- Slim File Manager -->
-  <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="jb4.3" />
+  <!-- CM File Manager -->
+  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master" />
 
   <!-- Slim OTA -->
   <project path="packages/apps/SlimCenter" name="SlimRoms/packages_apps_SlimCenter" remote="github" revision="jb4.3" />
@@ -408,5 +408,7 @@
 
     <!--CyanogenMod DSPManager -->
    <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-10.2" />
+   
+
 
 </manifest>
