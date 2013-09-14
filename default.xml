@@ -396,7 +396,9 @@
   <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="jb4.3" />
 
   <!-- Slim toolchain gcc and linaro -->
-  <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" />
+  <!-- <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
+  <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" /> 
+
 
   <!-- New Additions theme engine CM -->
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="cm-10.2" />
@@ -409,6 +411,10 @@
     <!--CyanogenMod DSPManager -->
    <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-10.2" />
    
+   <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" />
+   <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" />
+   <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" />
+
 
 
 </manifest>
