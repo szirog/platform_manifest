@@ -415,6 +415,4 @@
    <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" />
    <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" />
 
-
-
 </manifest>
