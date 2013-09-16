@@ -396,8 +396,8 @@
   <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="jb4.3" />
 
   <!-- Slim toolchain gcc and linaro -->
-  <!-- <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
-  <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" /> 
+  <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
+  <!-- <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" />  -->
 
 
   <!-- New Additions theme engine CM -->
@@ -414,7 +414,8 @@
    <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
    <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
    <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
-   <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
+   <!-- <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" /> -->
+   <project name="szirog/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
    <project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="cm-10.2" />
 
 </manifest>
