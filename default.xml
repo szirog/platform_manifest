@@ -254,8 +254,7 @@
   <project path="hardware/ti/omap3" name="SlimRoms/hardware_ti_omap3" remote="github" revision="jb4.3" />
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="jb4.3" />
   <!--  <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="jb4.3" />  -->
-  <project name="szirog/hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="jb4.3" />
-  <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="jb4.3" />
+  <!-- <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="jb4.3" /> -->
   <project path="libcore" name="SlimRoms/platform_libcore" remote="github" revision="jb4.3" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
@@ -378,8 +377,6 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <project path="moto2slim" name="szirog/moto2slim" remote="github" revision="master" />
-
   <!-- New Additions for slim -->
   <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="jb4.3" />
 
@@ -406,16 +403,26 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" remote="github" revision="cm-10.2" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" remote="github" revision="cm-10.2" />
 
-    <!--CyanogenMod SamsungServiceMode -->
-   <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-10.2" />
+  <!--CyanogenMod SamsungServiceMode -->
+  <!--<project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-10.2" /> -->
 
-    <!--CyanogenMod DSPManager -->
-   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-10.2" />
+  <!--CyanogenMod DSPManager -->
+  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-10.2" />
    
-   <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
-   <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
-   <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
-   <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
-   <project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="cm-10.2" />
+
+  <!--CyanogenMod repositories -->
+  <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-10.2" />
+
+
+  <!--CyanogenMod modified repositories -->
+  <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
+  <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
+  <project name="szirog/hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="jb4.3" />
+
+
+  <project path="moto2slim" name="szirog/moto2slim" remote="github" revision="master" />
+
 
 </manifest>
