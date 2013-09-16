@@ -422,7 +422,7 @@
   <project name="szirog/hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="jb4.3" />
 
 
-  <project path="moto2slim" name="szirog/moto2slim" remote="github" revision="master" />
+  <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" />
 
 
 </manifest>
