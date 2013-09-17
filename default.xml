@@ -426,14 +426,14 @@
   <project name="szirog/hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="jb4.3" />
   <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-10.2" />  -->
 
-
+  <!-- Modified files in own pltaform_manifest repository --> 
   <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" >
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/android_device_motorola_umts_spyder/slim.dependencies" />
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/android_device_motorola_umts_spyder/slim.mk" />
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/android_device_motorola_umts_spyder/vendorsetup.sh" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/android_umts_spyder/slim.mk" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/umts_spyder/vendorsetup.sh" />
     <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
     <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="hardware/ti/wpan/bluedroid_wilink/Android.mk" />
-    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="kernel/motorola/android_device_motorola_omap4-common/BoardConfigCommon.mk" />
+    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="kernel/motorola/omap4-common/BoardConfigCommon.mk" />
     <copyfile src="vendor#slim#tools#squisher" dest="vendor/slim/tools/squisher" />
   </project>
 
