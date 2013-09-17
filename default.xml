@@ -428,7 +428,8 @@
 
   <!-- Modified files in own pltaform_manifest repository --> 
   <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" >
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" />
+    <!-- This file doesn"t need because the main repository provides the neccessary dependencies/repositories what the slim.dependencies file provides originally...
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" /> -->
     <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/umts_spyder/slim.mk" />
     <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/umts_spyder/vendorsetup.sh" />
     <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
