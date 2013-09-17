@@ -428,13 +428,13 @@
 
 
   <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" >
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="../device/motorola/android_device_motorola_umts_spyder/slim.dependencies" />
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="../device/motorola/android_device_motorola_umts_spyder/slim.mk" />
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="../device/motorola/android_device_motorola_umts_spyder/vendorsetup.sh" />
-    <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="../hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
-    <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="../hardware/ti/wpan/bluedroid_wilink/Android.mk" />
-    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="../kernel/motorola/android_device_motorola_omap4-common/BoardConfigCommon.mk" />
-    <copyfile src="vendor#slim#tools#squisher" dest="../vendor/slim/tools/squisher" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/android_device_motorola_umts_spyder/slim.dependencies" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/android_device_motorola_umts_spyder/slim.mk" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/android_device_motorola_umts_spyder/vendorsetup.sh" />
+    <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
+    <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="hardware/ti/wpan/bluedroid_wilink/Android.mk" />
+    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="kernel/motorola/android_device_motorola_omap4-common/BoardConfigCommon.mk" />
+    <copyfile src="vendor#slim#tools#squisher" dest="vendor/slim/tools/squisher" />
   </project>
 
 </manifest>
