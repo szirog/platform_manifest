@@ -253,8 +253,10 @@
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project path="hardware/ti/omap3" name="SlimRoms/hardware_ti_omap3" remote="github" revision="jb4.3" />
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="jb4.3" />
-  <!--  <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="jb4.3" />  -->
-  <!-- <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="jb4.3" /> -->
+
+  <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="jb4.3" />
+  <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="jb4.3" />
+
   <project path="libcore" name="SlimRoms/platform_libcore" remote="github" revision="jb4.3" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
@@ -411,20 +413,28 @@
    
 
   <!--CyanogenMod repositories -->
-  <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
-  <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
   <project name="TheMuppets/proprietary_vendor_motorola.git" path="vendor/motorola" remote="github" revision="cm-10.2" />
 
 
-  <!--CyanogenMod modified repositories -->
+  <!--CyanogenMod modified repositories 
   <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
   <project name="szirog/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="szirog/hardware_ti_wlan" path="hardware/ti/wlan" remote="github" revision="jb4.3" />
+  <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-10.2" />  -->
 
 
   <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" >
-    <copyfile src="squisher" dest="../vendor/slim/tools/squisher" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="../device/motorola/android_device_motorola_umts_spyder/slim.dependencies" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="../device/motorola/android_device_motorola_umts_spyder/slim.mk" />
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="../device/motorola/android_device_motorola_umts_spyder/vendorsetup.sh" />
+    <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="../hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
+    <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="../hardware/ti/wpan/bluedroid_wilink/Android.mk" />
+    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="../kernel/motorola/android_device_motorola_omap4-common/BoardConfigCommon.mk" />
+    <copyfile src="vendor#slim#tools#squisher" dest="../vendor/slim/tools/squisher" />
   </project>
 
 </manifest>
