@@ -424,7 +424,7 @@
 
 
   <project path="platform_manifest" name="szirog/platform_manifest" remote="github" revision="master" >
-    <copyfile src="platform_manifest/squisher" dest="vendor/slim/tools/squisher" />
+    <copyfile src="squisher" dest="../vendor/slim/tools/squisher" />
   </project>
 
 </manifest>
