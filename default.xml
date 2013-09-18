@@ -434,7 +434,7 @@
     <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/umts_spyder/vendorsetup.sh" />
     <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
     <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="hardware/ti/wpan/bluedroid_wilink/Android.mk" />
-    <copyfile src="kernel#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="kernel/motorola/omap4-common/BoardConfigCommon.mk" />
+    <copyfile src="device#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="device/motorola/omap4-common/BoardConfigCommon.mk" />
     <copyfile src="vendor#slim#tools#squisher" dest="vendor/slim/tools/squisher" />
   </project>
 
