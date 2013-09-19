@@ -424,7 +424,7 @@
   <project name="MoKee/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="jb-mr2_mkt" />
   <project name="MoKee/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="jb-mr2_mkt" />
   <project name="MoKee/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="jb-mr2_mkt" />
-  <project name="MoKee/android_vendor_motorola_unts_spyder.git" path="vendor/motorola" remote="github" revision="jb-mr1_mkt" />
+  <project name="MoKee/android_vendor_motorola_unts_spyder" path="vendor/motorola" remote="github" revision="jb-mr2_mkt" />
 
   <!--CyanogenMod modified repositories 
   <project name="szirog/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
