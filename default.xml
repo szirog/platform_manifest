@@ -396,10 +396,11 @@
   <!-- DashClock widget -->
   <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="jb4.3" />
 
-  <!-- Slim toolchain gcc and linaro -->
+  <!-- Slim toolchain gcc and linaro
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
+  -->
 
-  <!-- CyanodenMod toolchain gcc -->
+<!-- CyanodenMod toolchain gcc -->
   <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" />
 
 
