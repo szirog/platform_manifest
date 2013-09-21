@@ -398,6 +398,8 @@
 
   <!-- Slim toolchain gcc and linaro -->
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
+
+  <!-- CyanodenMod toolchain gcc -->
   <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" />
 
 
