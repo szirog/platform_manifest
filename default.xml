@@ -441,13 +441,13 @@
   
     <!-- Temporery commented own modification -->
     
-    <!-- #1 This file doesn"t need because the main repository manifest provides the neccessary dependencies/repositories what the orginally the "slim.dependencies2 file provides
+    <!-- #1 This file doesn"t need because the main repository manifest provides the neccessary dependencies/repositories what the orginally the "slim.dependencies" file provides
     <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" /> 
     -->
 
-    <!-- #2 The Motorola XT910 ROM must compile by ar-eabi-... version 4.4.3 - not the Slim provided 4.7 version!!!
+    <!-- #2 Patched original file to Slim, the Motorola XT910 kernel must be compiled by ar-eabi-... version 4.4.3 - not the Slim default 4.7 version!!! -->
     <copyfile src="device#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="device/motorola/omap4-common/BoardConfigCommon.mk" />
-    -->
+
 
     <!-- #3 This file is patched to the "WPA_SUPPLICANT_8_TI" driver -->
     <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
