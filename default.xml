@@ -398,7 +398,7 @@
 
   <!-- Slim toolchain gcc and linaro -->
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="jb4.3" /> -->
-  <!-- <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" />  -->
+  <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="github" revision="cm-10.2" />
 
 
   <!-- New Additions theme engine CM -->
@@ -412,7 +412,7 @@
   <!--CyanogenMod DSPManager -->
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-10.2" />
    
-
+ 
   <!--CyanogenMod repositories
   <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
   <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
@@ -435,14 +435,31 @@
 
   <!-- Modified files in own pltaform_manifest repository --> 
   <project path="xt910_platform_manifest" name="szirog/xt910_platform_manifest" remote="github" revision="master" >
-    <!-- This file doesn"t need because the main repository provides the neccessary dependencies/repositories what the slim.dependencies file provides originally...
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" /> -->
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/umts_spyder/slim.mk" />
-    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/umts_spyder/vendorsetup.sh" />
-    <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
-    <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="hardware/ti/wpan/bluedroid_wilink/Android.mk" />
+  
+    <!-- Temporery commented own modification
+  
+    #1 This file doesn"t need because the main repository manifest provides the neccessary dependencies/repositories what the orginally the "slim.dependencies2 file provides
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.dependencies" dest="device/motorola/umts_spyder/slim.dependencies" /> 
+  
+    #2 The Motorola XT910 ROM must compile by ar-eabi-... version 4.4.3 - not the Slim provided 4.7 version!!!
     <copyfile src="device#motorola#android_device_motorola_omap4-common#BoardConfigCommon.mk" dest="device/motorola/omap4-common/BoardConfigCommon.mk" />
+  
+    #3 This file parched to the "WPA_SUPPLICANT_8_TI" driver
+    <copyfile src="hardware#ti#wlan#mac80211#wpa_supplicant_lib#Android.mk" dest="hardware/ti/wlan/mac80211/wpa_supplicant_lib/Android.mk" />
+
+    -->
+    <!-- The own slim.mk for compiling --> 
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#slim.mk" dest="device/motorola/umts_spyder/slim.mk" />
+
+    <!-- The own vendorsetup.sh to add slim_umts_spyder into combo items --> 
+    <copyfile src="device#motorola#android_device_motorola_umts_spyder#vendorsetup.sh" dest="device/motorola/umts_spyder/vendorsetup.sh" />
+
+    <!-- Modified make file because the original only make with targa phone modell --> 
+    <copyfile src="hardware#ti#wpan#bluedroid_wilink#Android.mk" dest="hardware/ti/wpan/bluedroid_wilink/Android.mk" />
+
+    <!-- The own modified releasetool - momently do nothing ... --> 
     <copyfile src="vendor#slim#tools#squisher" dest="vendor/slim/tools/squisher" />
+
   </project>
 
 
