@@ -443,7 +443,7 @@
   <project name="CyanogenMod/android_hardware_ti_wpan" path="hardware/ti/wpan" remote="github" revision="cm-10.2" />  -->
 
   <project name="CyanogenMod/android_external_wpa_supplicant_8_ti" path="external/wpa_supplicant_8_ti" remote="github" revision="cm-10.2" />
-  <project name="STS-Dev-Team/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
+  <project name="CyanogenMod/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="alteredlikeness/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="alteredlikeness/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
   <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="cm-10.2" />  -->
