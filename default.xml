@@ -441,7 +441,7 @@
   <project name="STS-Dev-Team/android_kernel_motorola_omap4-common" path="kernel/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="alteredlikeness/android_device_motorola_omap4-common" path="device/motorola/omap4-common" remote="github" revision="cm-10.2" />
   <project name="alteredlikeness/android_device_motorola_umts_spyder" path="device/motorola/umts_spyder" remote="github" revision="cm-10.2" />
-  <project name="TheMuppets/proprietary_vendor_motorola.git" path="vendor/motorola" remote="github" revision="cm-10.2" />  -->
+  <project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="cm-10.2" />  -->
 
   <!-- Modified files in own pltaform_manifest repository --> 
   <project path="xt910_platform_manifest" name="szirog/xt910_platform_manifest" remote="github" revision="master" >
